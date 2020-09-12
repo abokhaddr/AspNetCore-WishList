@@ -25,8 +25,11 @@ namespace WishList
             
             if (env.IsDevelopment())
             {
-               
+                {
                 app.UseDeveloperExceptionPage();
+                
+                }
+                
             }
             else
             {
@@ -36,4 +39,6 @@ namespace WishList
             app.UseMvcWithDefaultRoute();
         }
     }
+               app.UesRouteing(); 
+                app.Endpoints(Endpoints ={Endpoints.MapDefaultControllerRoute ();});
 }
