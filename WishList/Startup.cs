@@ -37,3 +37,4 @@ namespace WishList
             app.UseMvcWithDefaultRoute();
         }
     }
+}
