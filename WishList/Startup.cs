@@ -38,6 +38,6 @@ namespace WishList
                 app.Endpoints(Endpoints ={Endpoints.MapDefaultControllerRoute ();});
      }
            
-        }
+     }
     }
-              
+}         
