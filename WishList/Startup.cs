@@ -10,9 +10,11 @@ using Microsoft.Extensions.DependencyInjection;
 namespace WishList
 {
     public class Startup
+    {
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
         
         }
+    }
 }
