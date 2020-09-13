@@ -21,5 +21,5 @@ namespace WishList
             services.AddMvc();   
         }
 
-    }]
+    }}
 }
