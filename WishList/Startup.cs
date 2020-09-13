@@ -15,12 +15,4 @@ namespace WishList
             services.AddMvc();
         
         }
- 
-        public void ConfigureServices(IServiceCollection services)
-        { 
-            app.UseRouting();  
-        
-        
-        }
-    }
 }
