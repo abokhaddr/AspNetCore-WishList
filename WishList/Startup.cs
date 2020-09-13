@@ -16,12 +16,7 @@ namespace WishList
         public void ConfigureServices(IServiceCollection services)
             
         {
-            services.AddMvc();
-        }
-
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
-        {   
-            if(env.IsDevelopment())
+        if(env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
             }
@@ -31,8 +26,9 @@ namespace WishList
             }
 
             app.UseRouting();
-            app.UseEndpoints( endpoints => { endpoints.MapDefaultControllerRoute(); }  );
-        }
+            app.UseEndpoints(
+                endpoints => { endpoints.MapDefaultControllerRoute(); }
+            );
             
         }
     }
