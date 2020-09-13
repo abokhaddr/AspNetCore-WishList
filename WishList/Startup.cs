@@ -19,7 +19,9 @@ namespace WishList
         
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-          
+           if(env.IsDevelopment())
+           {
+           }
             app.UseRouting();
             app.UseEndpoints(
                 endpoints => { endpoints.MapDefaultControllerRoute(); }
