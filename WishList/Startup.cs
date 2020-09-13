@@ -19,7 +19,7 @@ namespace WishList
         
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-           if(IsDevelopment())
+           if(env.IsDevelopment())
            {
                app.UseDeveloperExceptionPage();
            }
